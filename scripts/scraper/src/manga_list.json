@@ -1,0 +1,52 @@
+[
+    {
+        "id": "ror",
+        "name": "Record of Ragnarok",
+        "scraper": [
+            {
+                "name": "mangabat",
+                "url": "https://readmangabat.com/read-ix386590"
+            }
+        ]
+    },
+    {
+        "id": "tomogame",
+        "name": "Tomodachi Game",
+        "scraper": [
+            {
+                "name": "mangabat",
+                "url": "https://readmangabat.com/read-pw360863"
+            }
+        ]
+    },
+    {
+        "id": "juujika",
+        "name": "Juujika no Rokunin",
+        "scraper": [
+            {
+                "name": "mangabat",
+                "url": "https://readmangabat.com/read-oy392417"
+            }
+        ]
+    },
+    {
+        "id": "chidachi",
+        "name": "Chi no Wadachi",
+        "scraper": [
+            {
+                "name": "mangabat",
+                "url": "https://readmangabat.com/read-cp381208"
+            }
+        ]
+    },
+    {
+        "id": "yofuta",
+        "name": "Song of the Night",
+        "scraper": [
+            {
+                "name": "mangabat",
+                "url": "https://readmangabat.com/read-km388705"
+            }
+        ]
+    }
+]
