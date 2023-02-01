@@ -7,7 +7,8 @@ CREATE TABLE IF NOT EXISTS scraper_cdc (
   latest_tm TIMESTAMP,
   latest_chp VARCHAR,
   latest_url VARCHAR,
-  load_tm TIMESTAMP
+  load_tm TIMESTAMP,
+  job_id INTEGER
 );
 
 DROP TABLE IF EXISTS manga;

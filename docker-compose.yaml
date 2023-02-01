@@ -11,3 +11,17 @@ services:
     volumes:
       - ./deployment/database/init_script.sql:/docker-entrypoint-initdb.d/init_script.sql
       - ./deployment/database/volume:/var/lib/postgresql/data
+  
+  scraper:
+    image: avidito/ansuru-scraper:1
+    command: sleep infinity
+    environment:
+      - DB_HOSTNAME=db
+      - DB_USERNAME=${POSTGRES_USER}
+      - DB_PASSWORD=${POSTGRES_PASSWORD}
+      - DB_DATABASE=${POSTGRES_DB}
+      - DB_PORT=${POSTGRES_PORT}
+    volumes:
+      - ./tmp:/app/tmp
+    depends_on:
+      - db

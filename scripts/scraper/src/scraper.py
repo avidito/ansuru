@@ -38,7 +38,7 @@ def mangabat_scraper(url: str) -> dict:
     
     story_info = page.find(class_="panel-story-info").find(class_="story-info-right-extent").find_all("p")
     result = {
-        "latest_dt" : story_info[0].find_all("span")[1].text,
+        "latest_tm" : story_info[0].find_all("span")[1].text,
         "latest_chp": story_info[3].find_all("span")[1].text,
         "latest_url": story_info[3].find_all("span")[1].a.get("href")
     }
